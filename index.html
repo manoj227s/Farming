@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Framing - Direct from Farmers to Your Table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#2C5530',
+secondary: '#8B4513'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.hero-section {
+background-image: url('https://public.readdy.ai/ai/img_res/a3c1a83c5bb9ae30697daaf2d6d1399f.jpg');
+background-size: cover;
+background-position: center;
+}
+</style>
+</head>
+<body class="bg-white min-h-screen">
+<nav class="bg-white shadow-sm fixed w-full z-50">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">Organic Framing</a>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-gray-700 hover:text-primary">Home</a>
+<a href="#" class="text-gray-700 hover:text-primary">Shop</a>
+<a href="#" class="text-gray-700 hover:text-primary">Farmers</a>
+<a href="#" class="text-gray-700 hover:text-primary">About</a>
+<div class="relative">
+<button id="cartBtn" class="flex items-center text-gray-700 hover:text-primary">
+<i class="ri-shopping-cart-line text-xl"></i>
+<span class="ml-1">Cart</span>
+<span class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+</button>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90">Sign In</button>
+</div>
+</div>
+</div>
+</nav>
+<section class="hero-section pt-24 pb-16">
+<div class="max-w-7xl mx-auto px-4">
+<div class="bg-white bg-opacity-95 p-12 rounded-lg max-w-2xl">
+<h1 class="text-5xl font-bold text-gray-900 mb-6">Fresh from Farm to Your Table</h1>
+<p class="text-xl text-gray-600 mb-8">Connect directly with local farmers and enjoy fresh, seasonal produce delivered to your doorstep.</p>
+<div class="flex space-x-4">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 text-lg whitespace-nowrap">Shop Fresh</button>
+<button class="bg-white border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white text-lg whitespace-nowrap">Become a Seller</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/20e8d82b2b584dfa9b7ca468ec49951e.jpg" alt="Fresh Apples" class="w-full h-48 object-cover">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/0d34c29d8e3dae51268d32b000b2c47c.jpg" alt="Farmer" class="w-8 h-8 rounded-full">
+<span class="ml-2 text-sm text-gray-600">Sarah's Organic Farm</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Organic Red Apples</h3>
+<p class="text-gray-600 mb-4">Fresh picked daily from our orchards</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-primary">$4.99/lb</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-opacity-90">Add to Cart</button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/170fbe2c637808a1d66e082b21580ef2.jpg" alt="Fresh Carrots" class="w-full h-48 object-cover">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/e8368492ed0c65e83e029eb5a1441daf.jpg" alt="Farmer" class="w-8 h-8 rounded-full">
+<span class="ml-2 text-sm text-gray-600">Green Valley Farm</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Fresh Organic Carrots</h3>
+<p class="text-gray-600 mb-4">Sweet and crunchy, perfect for snacking</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-primary">$3.49/bunch</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-opacity-90">Add to Cart</button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/dbfb831af0423362d8c73f6294f3081f.jpg" alt="Fresh Tomatoes" class="w-full h-48 object-cover">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/1f5ef73f1d34d96ba999c2756224d27a.jpg" alt="Farmer" class="w-8 h-8 rounded-full">
+<span class="ml-2 text-sm text-gray-600">Sunshine Acres</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Heirloom Tomatoes</h3>
+<p class="text-gray-600 mb-4">Vine-ripened and full of flavor</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-primary">$5.99/lb</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-opacity-90">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Meet Our Farmers</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="bg-white rounded-lg shadow-lg p-6 text-center">
+<img src="https://public.readdy.ai/ai/img_res/e994cc38931ab7e96ea8e84361d85cf5.jpg" alt="Farmer" class="w-24 h-24 rounded-full mx-auto mb-4">
+<h3 class="text-xl font-semibold mb-2">Emily Thompson</h3>
+<p class="text-gray-600 mb-4">Organic Valley Farm</p>
+<p class="text-sm text-gray-500">20+ years of organic farming experience</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-6 text-center">
+<img src="https://public.readdy.ai/ai/img_res/6b84a15df3afb7f5b7c71e13bd262b51.jpg" alt="Farmer" class="w-24 h-24 rounded-full mx-auto mb-4">
+<h3 class="text-xl font-semibold mb-2">Michael Rodriguez</h3>
+<p class="text-gray-600 mb-4">Fresh Fields Farm</p>
+<p class="text-sm text-gray-500">Specializing in heirloom vegetables</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-6 text-center">
+<img src="https://public.readdy.ai/ai/img_res/08d9e6c20ee6b08de4cf802beaf4b16e.jpg" alt="Farmer" class="w-24 h-24 rounded-full mx-auto mb-4">
+<h3 class="text-xl font-semibold mb-2">Jessica Chen</h3>
+<p class="text-gray-600 mb-4">Green Acres</p>
+<p class="text-sm text-gray-500">Sustainable farming practices</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-6 text-center">
+<img src="https://public.readdy.ai/ai/img_res/56e8b23266cde4536ccbafa990bd50a2.jpg" alt="Farmer" class="w-24 h-24 rounded-full mx-auto mb-4">
+<h3 class="text-xl font-semibold mb-2">David Wilson</h3>
+<p class="text-gray-600 mb-4">Heritage Farm</p>
+<p class="text-sm text-gray-500">Fourth-generation farmer</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Why Choose Farm Fresh?</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="text-center">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-leaf-line text-4xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">100% Organic</h3>
+<p class="text-gray-600">All our products are certified organic and grown without harmful pesticides</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-truck-line text-4xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Farm to Door</h3>
+<p class="text-gray-600">Fresh produce delivered directly from our farms to your doorstep</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-heart-line text-4xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Support Local</h3>
+<p class="text-gray-600">Help sustain local farming communities and promote sustainable agriculture</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg p-6">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/44946e396952eaf73a6b835390f5eb2f.jpg" alt="Customer" class="w-12 h-12 rounded-full">
+<div class="ml-4">
+<h4 class="font-semibold">Rachel Anderson</h4>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"The quality of produce is exceptional. I love knowing exactly where my food comes from and supporting local farmers."</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-6">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/a8f24ce7865983a4d3cb4687e54e44a9.jpg" alt="Customer" class="w-12 h-12 rounded-full">
+<div class="ml-4">
+<h4 class="font-semibold">James Parker</h4>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"The convenience of having fresh, organic produce delivered to my door is amazing. The farmers are so knowledgeable and passionate."</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-6">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/306464a5e22b5a5abbbe5eb11205d6b8.jpg" alt="Customer" class="w-12 h-12 rounded-full">
+<div class="ml-4">
+<h4 class="font-semibold">Linda Martinez</h4>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"The difference in taste between these farm-fresh products and supermarket produce is remarkable. I'm never going back!"</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-primary text-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center">
+<h2 class="text-3xl font-bold mb-8">Join Our Community</h2>
+<p class="text-lg mb-8">Subscribe to receive updates about new farmers, seasonal produce, and special offers</p>
+<div class="max-w-md mx-auto">
+<div class="flex">
+<input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-l-button text-gray-900">
+<button class="bg-secondary text-white px-6 py-3 !rounded-r-button hover:bg-opacity-90">Subscribe</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-2xl font-['Pacifico'] mb-4">Organic Framing</h3>
+<p class="text-gray-400">Connecting farmers and consumers for a sustainable future</p>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">How It Works</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Farmers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Products</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Shipping Info</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Returns</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-facebook-fill text-xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-twitter-fill text-xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-instagram-fill text-xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-linkedin-fill text-xl"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Organic Framing. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+<div class="bg-white rounded-lg max-w-md mx-auto mt-20 p-6">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-xl font-semibold">Shopping Cart</h3>
+<button id="closeCart" class="text-gray-500 hover:text-gray-700">
+<i class="ri-close-line text-2xl"></i>
+</button>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<img src="https://public.readdy.ai/ai/img_res/aad91a6cb73249101a9f52cd43df570b.jpg" alt="Product" class="w-16 h-16 rounded object-cover">
+<div class="ml-4">
+<h4 class="font-semibold">Organic Red Apples</h4>
+<p class="text-gray-500">2 lb</p>
+</div>
+</div>
+<span class="font-semibold">$9.98</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<img src="https://public.readdy.ai/ai/img_res/918594fa86cc1a3093295fb28a527dd7.jpg" alt="Product" class="w-16 h-16 rounded object-cover">
+<div class="ml-4">
+<h4 class="font-semibold">Fresh Organic Carrots</h4>
+<p class="text-gray-500">1 bunch</p>
+</div>
+</div>
+<span class="font-semibold">$3.49</span>
+</div>
+</div>
+<div class="border-t mt-6 pt-4">
+<div class="flex justify-between mb-4">
+<span class="font-semibold">Total</span>
+<span class="font-semibold">$13.47</span>
+</div>
+<button class="w-full bg-primary text-white py-3 !rounded-button hover:bg-opacity-90">Checkout</button>
+</div>
+</div>
+</div>
+<script>
+document.getElementById('cartBtn').addEventListener('click', function() {
+document.getElementById('cartModal').classList.remove('hidden');
+});
+document.getElementById('closeCart').addEventListener('click', function() {
+document.getElementById('cartModal').classList.add('hidden');
+});
+document.getElementById('cartModal').addEventListener('click', function(e) {
+if (e.target === this) {
+this.classList.add('hidden');
+}
+});
+</script>
+</body>
+</html>
